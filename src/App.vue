@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <!--页面由router-view（路由组件）和FooterGuide（非路由组件）两个组件-->
+    <router-view></router-view>
+    <FooterGuide></FooterGuide>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
-export default {
-  name: 'App',
+  import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+  export default {
   components: {
-    HelloWorld
+    FooterGuide
   }
+
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="less" rel="stylesheet/less">
+  #app{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+  }
 </style>

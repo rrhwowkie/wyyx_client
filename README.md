@@ -1,4 +1,4 @@
-# gshop
+# wyyx_client
 
 > A Vue.js project
 

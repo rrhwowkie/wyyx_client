@@ -8,14 +8,14 @@
   </head>
   <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
   <script>
+    //  rem适配
     (function(){
       var width = document.documentElement.clientWidth;
-//      创建style
+    //  创建style
       var styleNode = document.createElement('style')
       styleNode.innerHTML = 'html{font-size: '+width/16 + 'px !important}';
       document.head.appendChild(styleNode);
     })();
-
 
     if ('addEventListener' in document) {
       document.addEventListener('DOMContentLoaded', function() {

@@ -1,5 +1,5 @@
 <template>
-  <!--首页头部的logo和搜索框-->
+  <!--首页导航-->
   <div class="nav-header">
     <header>
       <a href="/" class="logo"></a>
@@ -60,7 +60,7 @@
     }
   }
 </script>
-<style lang="less" rel="stylesheet/less">
+<style lang="less" rel="stylesheet/less" scoped>
   @import "../../common/less/ximins";
   .nav-header{
     position: fixed;
